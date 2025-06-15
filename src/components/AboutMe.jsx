@@ -44,7 +44,7 @@ const AboutMe = () => {
               {stats.map((stat, index) => (
                 <div key={index} className="flex flex-col items-center text-center max-w-[200px] flex-1">
                   <div className="w-24 h-24 md:w-32 md:h-32 rounded-full border-2 border-brand-accent flex justify-center items-center mb-4">
-                    <span className="font-heading font-black text-xl sm:text-2xl md:text-3xl text-white break-words text-center w-full px-2">
+                    <span className="font-mono font-black text-xl sm:text-2xl md:text-3xl text-white break-words text-center w-full px-2">
                       {stat.value}
                     </span>
                   </div>
