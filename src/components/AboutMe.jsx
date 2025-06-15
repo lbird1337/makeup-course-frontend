@@ -42,13 +42,13 @@ const AboutMe = () => {
             
             <div className="flex flex-col md:flex-row justify-around items-center gap-8 pt-8">
               {stats.map((stat, index) => (
-                <div key={index} className="flex flex-col items-center text-center max-w-[180px] flex-1">
+                <div key={index} className="flex flex-col items-center text-center max-w-[200px] flex-1">
                   <div className="w-24 h-24 md:w-32 md:h-32 rounded-full border-2 border-brand-accent flex justify-center items-center mb-4">
-                    <span className="font-heading font-black text-2xl md:text-3xl text-white">
+                    <span className="font-heading font-black text-3xl sm:text-4xl md:text-5xl text-white">
                       {stat.value}
                     </span>
                   </div>
-                  <p className="font-body text-brand-text text-sm md:text-base opacity-80 leading-snug">
+                  <p className="font-body text-brand-text text-base sm:text-lg md:text-xl opacity-80 leading-snug">
                     {stat.text}
                   </p>
                 </div>
