@@ -6,8 +6,7 @@ import { useWindowSize } from '../hooks/useWindowSize';
 // Все 15 фотографий с разными пропорциями
 const allImages = Array.from({ length: 15 }, (_, i) => ({
   src: `${import.meta.env.BASE_URL}portfolio/${i + 1}.jpg`,
-  // Добавляем разные пропорции для визуального разнообразия
-  aspect: i % 3 === 0 ? 'aspect-[4/5]' : 'aspect-square',
+  aspect: 'aspect-square',
 }));
 
 const Portfolio = () => {
