@@ -64,13 +64,13 @@ const AboutMe = () => {
               className="w-full"
             >
               <SwiperSlide>
-                <img src="/about/1.jpg" alt="Светлана Цыренова 1" className="w-full h-full object-cover aspect-[4/5]" />
+                <img src={`${import.meta.env.BASE_URL}about/1.jpg`} alt="Светлана Цыренова 1" className="w-full h-full object-cover aspect-[4/5]" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="/about/2.jpg" alt="Светлана Цыренова 2" className="w-full h-full object-cover aspect-[4/5]" />
+                <img src={`${import.meta.env.BASE_URL}about/2.jpg`} alt="Светлана Цыренова 2" className="w-full h-full object-cover aspect-[4/5]" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="/about/3.jpg" alt="Светлана Цыренова 3" className="w-full h-full object-cover aspect-[4/5]" />
+                <img src={`${import.meta.env.BASE_URL}about/3.jpg`} alt="Светлана Цыренова 3" className="w-full h-full object-cover aspect-[4/5]" />
               </SwiperSlide>
             </Swiper>
           </div>

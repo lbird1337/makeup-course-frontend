@@ -29,19 +29,19 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center md:justify-end px-4 sm:px-6 md:px-8 overflow-hidden">
       
-      {/* ДЕКОРАТИВНАЯ ДАТА НА ФОНЕ С УВЕЛИЧЕННОЙ ЯРКОСТЬЮ */}
+      {/* ДЕКОРАТИВНАЯ ДАТА: изменена позиция и размер */}
       <motion.div 
-        className="absolute top-4 right-4 md:top-auto md:bottom-4 md:left-4 font-heading font-black text-white/20 text-[12vw] leading-none select-none pointer-events-none"
+        className="absolute top-4 right-4 md:top-auto md:bottom-8 md:left-8 font-heading font-black text-white/20 text-[18vw] sm:text-[15vw] md:text-[12vw] leading-none select-none pointer-events-none"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5, delay: 0.5 }}
       >
-        22 / 23 ОКТЯБРЯ
+        22/23 ОКТЯБРЯ
       </motion.div>
 
-      {/* ОСНОВНОЙ КОНТЕНТ */}
+      {/* ОСНОВНОЙ КОНТЕНТ: добавлен отступ для смещения вверх */}
       <motion.div 
-        className="container mx-auto max-w-5xl flex flex-col items-center text-center md:items-end md:text-right"
+        className="container mx-auto max-w-5xl flex flex-col items-center text-center md:items-end md:text-right pb-16 md:pb-0" // Добавлен pb-16 для мобильных
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -62,7 +62,14 @@ const Hero = () => {
           в Улан-Удэ
         </motion.h1>
         
-        <motion.div variants={itemVariants} className="mt-10">
+        <motion.p
+          className="font-body text-brand-text uppercase tracking-widest mt-8 text-fluid-base"
+          variants={itemVariants}
+        >
+          22 / 23 октября
+        </motion.p>
+        
+        <motion.div variants={itemVariants} className="mt-8">
           <a href="#pricing-section" className="btn-primary">
             Забронировать место
           </a>
